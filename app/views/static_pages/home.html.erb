@@ -1,0 +1,16 @@
+<% if  user_signed_in? %>
+<h1>You're signed in</h1>
+<% else %>
+<div class="center hero-unit">
+    <h1>Welcome to CS Travel</h1>
+
+    <h2>
+      <a href="http://hotelninjas.com/">CS Travel</a>
+      is the leading cross-selling platform suitable for all travel properties.
+    </h2>
+
+    <%= link_to "Sign up now!", new_user_registration_path, 
+                                class: "btn btn-large btn-primary" %>
+</div>
+
+<% end %>
